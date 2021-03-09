@@ -43,6 +43,8 @@ instances:
 #   my_config_2:
 #     strategy: Strategy002
 #     config_file: config2.json
+#     behaviours:
+#       pairlist_update: volume24
 #     config:
 #       bot_name: "Experimental Trading Bot"
 #       stake_amount: 100
