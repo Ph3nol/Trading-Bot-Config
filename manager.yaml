@@ -1,0 +1,54 @@
+parameters:
+  hosts:
+    api: trading.demo
+    ui: ui.trading.demo
+  # cors_domains:
+  #   - ui.trading.com
+  #   - ui.trading.net
+  #   - ui.trading.org
+
+instances:
+# --- Common instances base config ----
+  _all:
+    config:
+      dry_run: true
+      dry_run_wallet: 150
+      fiat_display_currency: EUR
+      exchange:
+        key: xxx
+        secret: xxx
+      telegram:
+        enabled: false
+        chat_id: "1234567890"
+      api_server:
+        enabled: true
+        jwt_secret_key: xxx
+        username: xxx
+        password: xxx
+      initial_state: running
+      forcebuy_enable: false
+
+# ------------------------------------------
+  my_config_1:
+    strategy: Strategy001
+    config_file: config1.json
+    config:
+      bot_name: "Demo Trading Bot"
+      stake_amount: 25
+      telegram:
+        enabled: true
+        token: xxx
+
+# # ------------------------------------------
+#   my_config_2:
+#     strategy: Strategy002
+#     config_file: config2.json
+#     config:
+#       bot_name: "Experimental Trading Bot"
+#       stake_amount: 100
+#       telegram:
+#         enabled: true
+#         token: xxx
+
+# # ------------------------------------------
+# ...
