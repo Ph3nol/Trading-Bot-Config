@@ -44,7 +44,9 @@ instances:
 #     strategy: Strategy002
 #     config_file: config2.json
 #     behaviours:
-#       volumePercent24hPairlist:
+#       tradingViewScan:
+#         sortType: performance # or `recommendation`
+#         pairsCount: 30        # count of final pairs
 #     config:
 #       bot_name: "Experimental Trading Bot"
 #       stake_amount: 100
