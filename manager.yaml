@@ -49,8 +49,8 @@ instances:
 #         - 12:00-18:00 # From 12:00 AM to 11:00 PM (24h format, host machine timezone)
 #     behaviours:
 #       tradingViewScan:
-#         sortType: performance # or `recommendation`
-#         pairsCount: 30        # count of final pairs
+#         searchType: 5mChangePercent # or `1mChangePercent`
+#         pairsCount: 30              # count of final pairs
 #     config:
 #       bot_name: "Experimental Trading Bot"
 #       stake_amount: 100
