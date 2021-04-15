@@ -1,7 +1,7 @@
 {
     "bot_name": "TradingBot 1",
     "dry_run": true,
-    "ticker_interval": "5m",
+    "timeframe": "5m",
     "max_open_trades": -1,
     "tradable_balance_ratio": 1,
     "stake_currency": "USDT",
