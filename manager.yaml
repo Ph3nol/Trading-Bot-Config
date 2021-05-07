@@ -2,6 +2,10 @@ parameters:
   hosts:
     api: trading.demo
     ui: ui.trading.demo
+  # --- change images for instances (e.g to use official freqtrade image)
+  # docker:
+  #   core_image: ph3nol/freqtrade:latest
+  #   ui_image: ph3nol/freqtrade-ui:latest
   # cors_domains:
   #   - ui.trading.com
   #   - ui.trading.net
